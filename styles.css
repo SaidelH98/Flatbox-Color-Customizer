@@ -1,0 +1,38 @@
+/*
+colors:
+    White: #DDD5CE
+    Red: #D53C34
+    Black: #141316
+    Marble: #c4ccdd
+    Magenta: #d94267
+    Orange: #d58608
+    Green: #6cc06f
+    Pink: #d2b4c3
+    Blue: #0871c4
+    Red Marble: #672b0f
+    Dark Green: #1a6a81
+    Gray: #a2bbc9
+    Dark Red: #822c25
+    Yellow: #e1e001
+    Light Blue: #9cddf2
+    Purple: #796dc1
+*/
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #50577A;
+    color: lightgray;
+}
+
+header, div{
+    text-align: center;
+}
+
+#myCanvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 801px;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatbox Color Customizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Flatbox Color Customizer</h1>
+    </header>
+    <canvas id = "myCanvas" width="801" height="529" style="border:1px solid #000000;">
+    </canvas>
+
+    <br></br>
+
+    <div>
+        <label for="shellColor">Shell:</label>
+        <select name="shellColor" id="shellColor">
+            <option value="0">White</option>
+            <option value="1">Red</option>
+            <option value="2" selected>Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <br></br>
+
+        <label for="leftButton">Left Button:</label>
+        <select name="leftButton" id="leftButton">
+            <option value="0">White</option>
+            <option value="1" selected>Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <label for="downButton">Down Button:</label>
+        <select name="downButton" id="downButton">
+            <option value="0">White</option>
+            <option value="1" selected>Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <label for="rightButton">Right Button:</label>
+        <select name="rightButton" id="rightButton">
+            <option value="0">White</option>
+            <option value="1" selected>Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <label for="upButton">Up Button:</label>
+        <select name="upButton" id="upButton">
+            <option value="0">White</option>
+            <option value="1" selected>Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <br></br>
+
+        <label for="squareButton">Square Button:</label>
+        <select name="squareButton" id="squareButton">
+            <option value="0" selected>White</option>
+            <option value="1">Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <label for="triangleButton">Triangle Button:</label>
+        <select name="triangleButton" id="triangleButton">
+            <option value="0" selected>White</option>
+            <option value="1">Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <label for="r1Button">R1 Button:</label>
+        <select name="r1Button" id="r1Button">
+            <option value="0" selected>White</option>
+            <option value="1">Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <label for="l1Button">L1 Button:</label>
+        <select name="l1Button" id="l1Button">
+            <option value="0" selected>White</option>
+            <option value="1">Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <br></br>
+
+        <label for="crossButton">Cross Button:</label>
+        <select name="crossButton" id="crossButton">
+            <option value="0" selected>White</option>
+            <option value="1">Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <label for="circleButton">Circle Button:</label>
+        <select name="circleButton" id="circleButton">
+            <option value="0" selected>White</option>
+            <option value="1">Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <label for="r2Button">R2 Button:</label>
+        <select name="r2Button" id="r2Button">
+            <option value="0" selected>White</option>
+            <option value="1">Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+
+        <label for="l2Button">L2 Button:</label>
+        <select name="l2Button" id="l2Button">
+            <option value="0" selected>White</option>
+            <option value="1">Red</option>
+            <option value="2">Black</option>
+            <option value="3">Marble</option>
+            <option value="4">Magenta</option>
+            <option value="5">Orange</option>
+            <option value="6">Green</option>
+            <option value="7">Pink</option>
+            <option value="8">Blue</option>
+            <option value="9">Red Marble</option>
+            <option value="10">Dark Green</option>
+            <option value="11">Gray</option>
+            <option value="12">Dark Red</option>
+            <option value="13">Yellow</option>
+            <option value="14">Light Blue</option>
+            <option value="15">Purple</option>
+        </select>
+    </div>
+
+    <script src="canvas.js"></script>
+</body>
+</html>
